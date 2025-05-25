@@ -29,22 +29,27 @@ The **Singleton Pattern** is a **creational design pattern** that ensures a clas
 
 ---
 
-## Example in Python
+## Example in Java
 
-```python
-class Singleton:
-    _instance = None
+```public class Singleton {
+    private static Singleton instance;
 
-    def __new__(cls):
-        if cls._instance is None:
-            print("Creating the singleton instance")
-            cls._instance = super(Singleton, cls).__new__(cls)
-            # Initialization can go here
-        return cls._instance
+    private Singleton() {
+        // private constructor
+    }
 
-# Usage
-obj1 = Singleton()
-obj2 = Singleton()
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
 
-print(obj1 == obj2)  # True, both are the same instance
+// Usage:
+Singleton s1 = Singleton.getInstance();
+Singleton s2 = Singleton.getInstance();
+
+System.out.println(s1 == s2);  // true
+
 ```
