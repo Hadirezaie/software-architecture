@@ -30,3 +30,15 @@ The **Factory Pattern** is a creational design pattern that provides an interfac
 2. ***Concrete Products:*** Implementations of the product interface.
 3. ***Factory Class:*** Contains the creation logic.
 4. ***Client:*** Uses the factory to create objects.
+
+## UML Diagram:
+# UML Diagram for Factory Pattern
+
+```plantuml
+@startuml
+Client --> Factory
+Factory --> Product
+Product <|-- ConcreteProduct1
+Product <|-- ConcreteProduct2
+@enduml
+
