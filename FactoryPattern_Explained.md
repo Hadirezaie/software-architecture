@@ -26,7 +26,7 @@ The **Factory Pattern** is a creational design pattern that provides an interfac
 
 ## Structure of Factory Pattern
 **Components:**
-1. **Product Interface/Abstract Class:** Defines the common interface for objects.
-2. **Concrete Products:** Implementations of the product interface.
-3. **Factory Class:** Contains the creation logic.
-4. **Client:** Uses the factory to create objects.
+1. ***Product Interface/Abstract Class:*** Defines the common interface for objects.
+2. ***Concrete Products:*** Implementations of the product interface.
+3. ***Factory Class:*** Contains the creation logic.
+4. ***Client:*** Uses the factory to create objects.
