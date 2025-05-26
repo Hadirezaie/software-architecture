@@ -34,16 +34,13 @@ The **Factory Pattern** is a creational design pattern that provides an interfac
 ## UML Diagram:
 ## UML Diagram for Factory Pattern
 
-```plantuml
-@startuml
-Client --> Factory
-Factory --> Product
-Product <|-- ConcreteProduct1
-Product <|-- ConcreteProduct2
-@enduml
+[Client] --> [Factory]
+[Factory] --> [Product]
+[Product] <|-- [ConcreteProduct1]
+[Product] <|-- [ConcreteProduct2]
 
 ## Simple Factory Pattern Implementation
-1. ** Product Interface**
+1. Product Interface
 
 ```java
 public interface Shape {
