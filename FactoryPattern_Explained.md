@@ -45,7 +45,7 @@ The **Factory Pattern** is a creational design pattern that provides an interfac
 ```java
 public interface Shape {
     void draw();
-}
+}```
 
 2. Concrete Products
 ```java
@@ -55,7 +55,6 @@ public class Circle implements Shape {
         System.out.println("Drawing a Circle");
     }
 }
-```
 
 public class Square implements Shape {
     @Override
