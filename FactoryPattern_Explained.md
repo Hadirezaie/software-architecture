@@ -45,7 +45,8 @@ The **Factory Pattern** is a creational design pattern that provides an interfac
 ```java
 public interface Shape {
     void draw();
-}```
+}
+```
 
 2. Concrete Products
 ```java
