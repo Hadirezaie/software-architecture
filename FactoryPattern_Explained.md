@@ -251,6 +251,6 @@ public class Application {
 # Exercises for Practice
 
 1. Extend the ShapeFactory to support Rectangle and Triangle
-2. Create a DocumentFactory that can produce PDF, Word, and Excel documents
-   3.Implement a cross-platform UI factory for Windows and macOS
-3. Design a database factory for MySQL, PostgreSQL, and Oracle
+2. Create a DocumentFactory that can produce PDF, Word, and Excel documents.
+3. Implement a cross-platform UI factory for Windows and macOS
+4. Design a database factory for MySQL, PostgreSQL, and Oracle
