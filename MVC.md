@@ -80,13 +80,13 @@ User
     User
 ```
 
-1. Model
+1. **Model:**
    The data and business logic of an application.
 
-2. View
+2. **View:**
    Displays the data from the Model to the user and sends user inputs to the Controller.
 
-3. Controller
+3. **Controller:**
    The Controller serves as a link between the Model and the View. It processes user input, modifies the Model based on that input, and then updates the View to display the changes.
 
 ## Communication Between Components (MVC)
