@@ -110,7 +110,7 @@ A REST resource (e.g., a blog post) can include not only its own data but also *
 }
 ```
 
-## Common HTTP Methods in REST
+## 3. Common HTTP Methods in REST
 
 | Method | Description               | CRUD Equivalent |
 | ------ | ------------------------- | --------------- |
@@ -132,6 +132,16 @@ PUT    /students/15       → Fully update student with ID 15
 DELETE /students/15       → Delete student with ID 15
 
 ```
+
+## 4. REST and HTTP are Not the Same
+
+> It's common for people to compare REST with HTTP, but they are not the same thing.
+
+```text
+REST != HTTP
+```
+
+While REST aims to bring more structure to the web, Roy Fielding emphasizes strict adherence to its principles. In his dissertation, he did not mandate any specific implementation or protocol—not even HTTP. An interface can be considered RESTful as long as it follows the six guiding principles.
 
 ## Advantages of REST
 
@@ -193,3 +203,15 @@ DELETE /students/15       → Delete student with ID 15
 - Public APIs for third-party integration
 
 - CRUD operations for databases
+
+## 5. Summary
+
+In REST architecture, **data and functionality are treated as resources** accessed via URIs. These resources are manipulated using a standard set of operations, typically over HTTP (though REST is not limited to it).
+
+Resources are **decoupled from their representations**, allowing clients to access them in formats like JSON, XML, HTML, or JPEG.
+
+Clients and servers exchange resource representations through a **standardized interface**, and metadata is used for caching, error handling, content negotiation, and access control.
+
+A critical principle is **statelessness**—each server interaction must contain all the necessary context.
+
+These principles make RESTful systems **simple, lightweight, and efficient**.
