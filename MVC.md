@@ -114,3 +114,121 @@ User
 - **View renders the updated user interface**
 
 > This flow ensures each component has a specific role, improving maintainability and scalability of the application.
+
+## Example of the MVC Design Pattern
+
+```text
++-----------------------+           +---------------------------+
+|       Student         |<--------- |     StudentController     |
++-----------------------+           +---------------------------+
+| - rollNo: String      |           | - model: Student          |
+| - name: String        |           | - view: StudentView       |
+|-----------------------|           |---------------------------|
+| + getRollNo(): String |           | + StudentController(model:|
+| + setRollNo(String):  |           |   Student, view: StudentView): void |
+| + getName(): String   |           | + setStudentName(String): void      |
+| + setName(String):    |           | + getStudentName(): String          |
+|   void                |           | + setStudentRollNo(String): void    |
++-----------------------+           | + getStudentRollNo(): String        |
+                                    | + updateView(): void                |
+                                    +---------------------------+
+                                                |
+                                                |
+                                                v
+                                    +-----------------------------+
+                                    |        StudentView          |
+                                    +-----------------------------+
+                                    | + printStudentDetails(      |
+                                    |     name: String,           |
+                                    |     rollNo: String): void   |
+                                    +-----------------------------+
+
+[Model] -------------> Student
+[View]  -------------> StudentView
+[Controller] --------> StudentController
+```
+
+This class diagram maps directly to the MVC components:
+
+- **Model**: `Student`
+- **View**: `StudentView`
+- **Controller**: `StudentController`
+
+Let me know if you'd like a UML diagram version using Mermaid syntax or PlantUML!
+
+1. Model (Student class)
+
+The Model holds the student's data (name and roll number) and offers methods to retrieve and update this information.
+
+```java
+class Student {
+    private String rollNo;
+    private String name;
+
+    public String getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(String rollNo) {
+        this.rollNo = rollNo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+2. View (StudentView class)
+
+The View defines how data (e.g., student details) is presented to the user and includes a method to display the student's name and roll number.
+
+```java
+class StudentView {
+    public void printStudentDetails(String studentName, String studentRollNo) {
+        System.out.println("Student:");
+        System.out.println("Name: " + studentName);
+        System.out.println("Roll No: " + studentRollNo);
+    }
+}
+```
+
+3. Controller (StudentController class)
+
+The Controller functions as a bridge between the Model and the View. It holds references to both and includes methods to modify the Model and refresh the View accordingly.
+
+```java
+class StudentController {
+    private Student model;
+    private StudentView view;
+
+    public StudentController(Student model, StudentView view) {
+        this.model = model;
+        this.view = view;
+    }
+
+    public void setStudentName(String name) {
+        model.setName(name);
+    }
+
+    public String getStudentName() {
+        return model.getName();
+    }
+
+    public void setStudentRollNo(String rollNo) {
+        model.setRollNo(rollNo);
+    }
+
+    public String getStudentRollNo() {
+        return model.getRollNo();
+    }
+
+    public void updateView() {
+        view.printStudentDetails(model.getName(), model.getRollNo());
+    }
+}
+```
