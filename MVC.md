@@ -1,17 +1,17 @@
 # MVC Design Pattern ( Model View Controller)
 
-## Table of Content
+## Table of Contents
 
-    What is the MVC Design Pattern?
-    Components of the MVC Design Pattern
-    Communication between the Components
-    Example of the MVC Design Pattern
-    Advantages of the MVC Design Pattern
-    Disadvantages of the MVC Design Pattern
+- [What is the MVC Design Pattern?](#what-is-the-mvc-design-pattern)
+- [Components of the MVC Design Pattern](#components-of-the-mvc-design-pattern)
+- [Communication between the Components](#communication-between-the-components)
+- [Example of the MVC Design Pattern](#example-of-the-mvc-design-pattern)
+- [Advantages of the MVC Design Pattern](#advantages-of-the-mvc-design-pattern)
+- [Disadvantages of the MVC Design Pattern](#disadvantages-of-the-mvc-design-pattern)
 
 ## What is the MVC Design Pattern?
 
-## The MVC (Model-View-Controller) design pattern is a software architecture approach that divides an application into three core parts: the Model, the View, and the Controller. This separation simplifies code management and maintenance, encourages modular development, and supports component reuse. Each component is responsible for a specific aspect of the application's functionality.
+The MVC (Model-View-Controller) design pattern is a software architecture approach that divides an application into three core parts: the Model, the View, and the Controller. This separation simplifies code management and maintenance, encourages modular development, and supports component reuse. Each component is responsible for a specific aspect of the application's functionality.
 
 ```text
                 +-------------+
@@ -36,7 +36,7 @@
 
 ## Why use MVC Design Pattern?
 
-### The MVC design pattern separates an application into three parts—Model, View, and Controller—allowing for independent development, easier maintenance, better testing, and improved software quality.
+The MVC design pattern separates an application into three parts—Model, View, and Controller—allowing for independent development, easier maintenance, better testing, and improved software quality.
 
 ## Components of the MVC Design Pattern
 
