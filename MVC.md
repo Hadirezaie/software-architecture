@@ -79,3 +79,38 @@ User
       |
     User
 ```
+
+1. Model
+   The data and business logic of an application.
+
+2. View
+   Displays the data from the Model to the user and sends user inputs to the Controller.
+
+3. Controller
+   The Controller serves as a link between the Model and the View. It processes user input, modifies the Model based on that input, and then updates the View to display the changes.
+
+## Communication Between Components (MVC)
+
+- **User interacts with the View**
+
+  - Example: Clicking a button or entering text.
+
+- **View forwards user input to the Controller**
+
+- **Controller processes the input**
+
+  - Interprets the action and applies logic.
+
+- **Controller updates the Model**
+
+  - Modifies data based on input or logic.
+
+- **Model notifies the View of changes**
+
+- **View requests updated data from the Model**
+
+- **Controller may also update the View directly**
+
+- **View renders the updated user interface**
+
+> This flow ensures each component has a specific role, improving maintainability and scalability of the application.
