@@ -4,7 +4,7 @@
 
 - [What is the MVC Design Pattern?](#what-is-the-mvc-design-pattern)
 - [Components of the MVC Design Pattern](#components-of-the-mvc-design-pattern)
-- [Communication between the Components](#communication-between-the-components)
+- [Communication Between Components](#communication-between-components)
 - [Example of the MVC Design Pattern](#example-of-the-mvc-design-pattern)
 - [When to Use the MVC Design Pattern](#when-to-use-the-MVC-design-pattern)
 - [When Not to Use the MVC Design Pattern](#when-not-to-use-the-MVC-design-pattern)
@@ -89,7 +89,7 @@ User
 3. **Controller:**
    The Controller serves as a link between the Model and the View. It processes user input, modifies the Model based on that input, and then updates the View to display the changes.
 
-## Communication Between Components (MVC)
+## Communication Between Components
 
 - **User interacts with the View**
 
