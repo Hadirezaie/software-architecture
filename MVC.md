@@ -154,8 +154,6 @@ This class diagram maps directly to the MVC components:
 - **View**: `StudentView`
 - **Controller**: `StudentController`
 
-Let me know if you'd like a UML diagram version using Mermaid syntax or PlantUML!
-
 1. Model (Student class)
 
 The Model holds the student's data (name and roll number) and offers methods to retrieve and update this information.
@@ -232,3 +230,37 @@ class StudentController {
     }
 }
 ```
+
+## When to Use the MVC Design Pattern
+
+Consider using the MVC pattern in the following situations:
+
+- **Complex Applications**  
+  Ideal for large-scale apps with multiple features and user interactions (e.g., e-commerce platforms), as MVC helps keep the code organized and manageable.
+
+- **Frequent UI Updates**  
+  If your application’s interface changes often, MVC allows you to update the View independently from the logic behind it.
+
+- **Component Reusability**  
+  The modular design of MVC makes it easier to reuse components across different projects or parts of the same project.
+
+- **Need for Testing**  
+  MVC supports better testing practices by allowing you to test the Model, View, and Controller separately, leading to higher code quality.
+
+---
+
+## When Not to Use the MVC Design Pattern
+
+Avoid using the MVC pattern in the following cases:
+
+- **Simple Applications**  
+  For basic apps with minimal functionality, MVC can introduce unnecessary overhead. A simpler design might be more efficient.
+
+- **Real-Time Systems**  
+  Apps that require instant updates, like live chat or online games, may not perform well with MVC due to its structured flow.
+
+- **Tightly Coupled Logic and UI**  
+  If your application’s logic and user interface are deeply interconnected, implementing MVC could complicate development.
+
+- **Limited Resources or Experience**  
+  For small teams or developers
