@@ -3,7 +3,7 @@
 # Table of Contents
 
 - [REST (Representational State Transfer)](#rest-representational-state-transfer)
-  - [What is REST?](#what-is-rest)
+  - [What is REST?](#what-is-rest?)
   - [1. Key Principles of REST](#1-key-principles-of-rest)
     - [Client-Server](#client-server)
     - [Stateless](#stateless)
