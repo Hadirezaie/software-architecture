@@ -216,11 +216,11 @@ A critical principle is **statelessness**—each server interaction must contain
 
 ## These principles make RESTful systems **simple, lightweight, and efficient**.
 
+---
+
 # Difference Between Stateless and Stateful
 
 Understanding the difference between **Stateless** and **Stateful** is essential in software architecture, especially in web APIs and distributed systems.
-
----
 
 ## ✅ Stateless
 
