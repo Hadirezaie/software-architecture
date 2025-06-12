@@ -1,5 +1,38 @@
 # REST (Representational State Transfer)
 
+# Table of Contents
+
+- [REST (Representational State Transfer)](#rest-representational-state-transfer)
+  - [What is REST?](#what-is-rest)
+  - [1. Key Principles of REST](#1-key-principles-of-rest)
+    - [Client-Server](#client-server)
+    - [Stateless](#stateless)
+    - [Cacheable](#cacheable)
+    - [Uniform Interface](#uniform-interface)
+    - [Layered System](#layered-system)
+    - [Code on Demand (optional)](#code-on-demand-optional)
+  - [2. What is a Resource?](#2-what-is-a-resource)
+    - [Resource Representation](#resource-representation)
+    - [2.1 Resource Identifiers](#21-resource-identifiers)
+    - [2.2 Hypermedia](#22-hypermedia)
+    - [2.3 Self-Descriptive](#23-self-descriptive)
+    - [2.4 Example - Hypermedia in REST](#24-example---hypermedia-in-rest)
+  - [3. Common HTTP Methods in REST](#3-common-http-methods-in-rest)
+  - [Example RESTful Endpoints](#example-restful-endpoints)
+  - [4. REST and HTTP are Not the Same](#4-rest-and-http-are-not-the-same)
+  - [Advantages of REST](#advantages-of-rest)
+  - [Disadvantages of REST](#disadvantages-of-rest)
+  - [REST vs. SOAP](#rest-vs-soap)
+  - [When to Use REST](#when-to-use-rest)
+  - [When Not to Use REST](#when-not-to-use-rest)
+  - [Common Use Cases for REST](#common-use-cases-for-rest)
+  - [5. Summary](#5-summary)
+- [Difference Between Stateless and Stateful](#difference-between-stateless-and-stateful)
+  - [Stateless](#stateless-1)
+  - [Stateful](#stateful)
+  - [Quick Comparison](#quick-comparison)
+  - [Summary](#summary)
+
 ## What is REST?
 
 **REST** (Representational State Transfer) is an architectural style for designing networked applications. It was introduced by **Roy Fielding** in his doctoral dissertation in 2000. RESTful APIs use standard HTTP methods to perform operations on resources, making them simple, scalable, and easy to implement.
