@@ -1,6 +1,27 @@
 # Microservices
 
 ## Table of Contents
+1. A Modern Architectural Approach
+2. Microservices Architecture
+   - What Are Microservices?
+   - Key Characteristics
+   - Comparison with Monolithic Architecture
+3. Why Microservices?
+4. Characteristics of Microservice Architecture - Summary
+5. Products not Projects - Summary
+6. Smart Endpoints and Dumb Pipes
+7. Microservices and SOA
+8. Decentralized Governance - Summary
+   - Many Languages, Many Options
+   - Decentralized Data Management
+   - Battle-tested Standards and Enforced Standards
+9. Infrastructure Automation
+10. Design for Failure
+11. The Circuit Breaker and Production Ready Code
+12. Evolutionary Design
+13. Are Microservices the Future?
+14. Footnotes
+
 
 ## A Modern Architectural Approach
 
