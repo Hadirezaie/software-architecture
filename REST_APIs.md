@@ -214,4 +214,77 @@ Clients and servers exchange resource representations through a **standardized i
 
 A critical principle is **statelessness**—each server interaction must contain all the necessary context.
 
-These principles make RESTful systems **simple, lightweight, and efficient**.
+## These principles make RESTful systems **simple, lightweight, and efficient**.
+
+# Difference Between Stateless and Stateful
+
+Understanding the difference between **Stateless** and **Stateful** is essential in software architecture, especially in web APIs and distributed systems.
+
+---
+
+## ✅ Stateless
+
+In stateless systems:
+
+- Each client request is **independent**.
+- All necessary information is included **within the request itself**.
+- The server does **not store any client context** between requests.
+
+### ✔ Advantages
+
+- High scalability
+- Easier to implement and maintain
+- No need for session management on the server
+
+### ❌ Disadvantages
+
+- Repetition of data in every request
+- More complexity on the client side
+
+### 🎯 Example
+
+- RESTful APIs using JWT tokens in every request
+- Stateless web services
+
+---
+
+## ✅ Stateful
+
+In stateful systems:
+
+- The server **remembers client state** between requests.
+- Sessions or other mechanisms are used to **store user context**.
+
+### ✔ Advantages
+
+- Easier interactions for the client
+- Suitable for complex, multi-step operations (e.g., shopping cart)
+
+### ❌ Disadvantages
+
+- More difficult to scale
+- Requires server-side state management
+
+### 🎯 Example
+
+- Traditional web applications using login sessions
+- Online banking systems or e-commerce platforms that store user state
+
+---
+
+## 🆚 Quick Comparison
+
+| Feature             | Stateless               | Stateful                  |
+| ------------------- | ----------------------- | ------------------------- |
+| Server stores state | ❌ No                   | ✅ Yes                    |
+| Request behavior    | Independent             | Depends on previous state |
+| Scalability         | Easy                    | Harder                    |
+| State storage       | On client (e.g., token) | On server (e.g., session) |
+| Common in REST      | ✅ Yes                  | ❌ Usually not            |
+
+---
+
+## ✅ Summary
+
+- **Stateless** systems are ideal for scalable, modular, and modern APIs like REST.
+- **Stateful** systems are more suitable for complex, interactive applications where user state must be preserved.
