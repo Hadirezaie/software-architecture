@@ -6,7 +6,7 @@
 - [Components of the MVC Design Pattern](#components-of-the-mvc-design-pattern)
 - [Communication between the Components](#communication-between-the-components)
 - [Example of the MVC Design Pattern](#example-of-the-mvc-design-pattern)
-- [Advantages of the MVC Design Pattern](#advantages-of-the-mvc-design-pattern)
+- [When to Use the MVC Design Pattern](#when-to-use-the-MVC-design-pattern)
 - [When Not to Use the MVC Design Pattern](#when-not-to-use-the-MVC-design-pattern)
 
 ## What is the MVC Design Pattern?
