@@ -71,6 +71,45 @@ A RESTful API resembles hypertext, where every addressable piece of information 
 > Remember that hypertext does not need to be HTML (or XML or JSON) on a browser. Machines can follow links when they understand the data format and relationship types.  
 > — Roy Fielding
 
+## 2.3. Self-Descriptive
+
+Resource representations should be **self-descriptive**, meaning the client does not need prior knowledge about the nature of the resource (e.g., whether it's an employee or a device). Instead, clients should rely on the **media type** associated with the resource to understand how to process it.
+
+In practice:
+
+- Custom media types are often created, typically one per resource type.
+- Each media type defines a **default processing model**.
+  - Example: HTML has a defined rendering process and browser behavior for its elements.
+
+> Media Types have no relation to the resource methods GET/PUT/POST/DELETE/… other than the fact that some media type elements will define a process model that goes like “anchor elements with an href attribute create a hypertext link that, when selected, invokes a retrieval request (GET) on the URI corresponding to the CDATA-encoded href attribute.”
+
+## 2.4 Example
+
+## Hypermedia in REST
+
+A REST resource (e.g., a blog post) can include not only its own data but also **hypermedia links** to related resources, such as the author or comments. These links allow clients to **discover additional information** or **trigger actions** by following them, promoting a more dynamic and discoverable API.
+
+```text
+{
+  "id": 123,
+  "title": "What is REST",
+  "content": "REST is an architectural style for building web services...",
+  "published_at": "2025-06-12T14:30:00Z",
+  "author": {
+    "id": 123,
+    "name": "John",
+    "profile_url": "https://example.com/authors/123"
+  },
+  "comments": {
+    "count": 5,
+    "comments_url": "https://example.com/posts/123/comments"
+  },
+  "self": {
+    "link": "https://example.com/posts/321"
+  }
+}
+```
+
 ## Common HTTP Methods in REST
 
 | Method | Description               | CRUD Equivalent |
