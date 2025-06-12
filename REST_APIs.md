@@ -6,7 +6,7 @@
 
 ---
 
-## Key Principles of REST
+## 1. Key Principles of REST
 
 For an API to be truly RESTful, it must follow these six constraints:
 
@@ -29,6 +29,47 @@ For an API to be truly RESTful, it must follow these six constraints:
    Servers can extend client functionality by sending executable code (e.g., JavaScript).
 
 ---
+
+## 2. What is a Resource?
+
+In REST, a **resource** is the core abstraction of information. It refers to anything that can be named, such as:
+
+- A document or image
+- A temporal service
+- A collection of resources
+- A real-world object (e.g., a person)
+
+### Resource Representation
+
+The current state of a resource is called its **representation**, which includes:
+
+- **Data** – The actual content or information
+- **Metadata** – Descriptive information about the data
+- **Hypermedia Links** – Links that help clients navigate to related resources or states
+
+> Resources and their representations form the foundation of RESTful interactions.
+
+## 2.1 Resource Identifiers
+
+In REST, each resource is uniquely identified using a **resource identifier**, typically a URI (Uniform Resource Identifier).  
+These identifiers are used to locate and interact with resources during communication between the client and server.
+
+> Example: `/students/25` identifies the student resource with ID 25.
+
+## 2.2 Hypermedia
+
+The format of a resource’s representation is called a **media type**, which defines how the data should be processed.
+
+A RESTful API resembles hypertext, where every addressable piece of information includes an address. This address can be explicit (like links or IDs) or implicit (derived from the media type and representation structure).
+
+> Hypermedia enables dynamic navigation between resources in RESTful systems.
+
+---
+
+> Hypertext (or hypermedia) means the simultaneous presentation of information and controls such that the information becomes the affordance through which the user (or automaton) obtains choices and selects actions.
+>
+> Remember that hypertext does not need to be HTML (or XML or JSON) on a browser. Machines can follow links when they understand the data format and relationship types.  
+> — Roy Fielding
 
 ## Common HTTP Methods in REST
 
