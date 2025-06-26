@@ -253,3 +253,19 @@ Tests that take **more time** to run due to reliance on **external resources** o
 - Automate both types — just with different schedules.
 
 ---
+
+## BeforeEach
+
+## AfterEach
+
+## BeforeAll
+
+## AfterAll
+
+## Arrange-Act-Assert (AAA) Pattern
+
+- Set up test resources with a @BeforeEach method.
+- Execute test method
+- Verify expected outcomes using assertions
+
+DELETE FROM sold_sim_queue where iccid in('8993017100289380492','8993017100279311036');
